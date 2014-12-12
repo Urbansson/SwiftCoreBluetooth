@@ -109,11 +109,11 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
             
             println("Characteristics UUID: \((aChar as CBCharacteristic).UUID)")
             if((aChar as CBCharacteristic).UUID.isEqual(CBUUID(string: "F000AA11-0451-4000-B000-000000000000"))){
-                println("Found correct tingy")
+                println("Found correct tingy with UIID \((aChar as CBCharacteristic).UUID)")
                 
 
                 var sUUID = CBUUID(string:"F000AA10-0451-4000-B000-000000000000");
-                var dUUID = CBUUID(string:"F000AA10-0451-4000-B000-000000000000");
+                var dUUID = CBUUID(string:"F000AA11-0451-4000-B000-000000000000");
                 var cUUID = CBUUID(string:"F000AA12-0451-4000-B000-000000000000");
                 var pUUID = CBUUID(string:"F000AA13-0451-4000-B000-000000000000");
 
@@ -130,7 +130,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
                 BLEUtilitySwift.writeCharacteristic(self.peripheral, sUUID: sUUID, cUUID: cUUID, data: data)
                 //BLEUtility.writeCharacteristic(self.peripheral, sCBUUID: sUUID, cCBUUID: cUUID, data: data)
 
-                BLEUtilitySwift.setNotificationForCharacteristic(self.peripheral, sUUID: sUUID, cUUID: cUUID, enable: true)
+                BLEUtilitySwift.setNotificationForCharacteristic(self.peripheral, sUUID: sUUID, cUUID: dUUID, enable: true)
                 //peripheral.setNotifyValue(true, forCharacteristic: aChar as CBCharacteristic)
                 //BLEUtility.setNotificationForCharacteristic(self.peripheral, sCBUUID: sUUID, cCBUUID: cUUID, enable: true)
 
