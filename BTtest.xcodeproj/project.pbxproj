@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F6377AC1A3A26FB005C8E62 /* BLEUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6377AB1A3A26FB005C8E62 /* BLEUtility.m */; };
+		9F6377AF1A3A2701005C8E62 /* Sensors.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6377AE1A3A2701005C8E62 /* Sensors.m */; };
 		9F684B361A389723000ED9F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F684B351A389723000ED9F5 /* AppDelegate.swift */; };
 		9F684B381A389723000ED9F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F684B371A389723000ED9F5 /* ViewController.swift */; };
 		9F684B3B1A389723000ED9F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F684B391A389723000ED9F5 /* Main.storyboard */; };
 		9F684B3D1A389723000ED9F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F684B3C1A389723000ED9F5 /* Images.xcassets */; };
 		9F684B401A389723000ED9F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F684B3E1A389723000ED9F5 /* LaunchScreen.xib */; };
 		9F684B4C1A389723000ED9F5 /* BTtestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F684B4B1A389723000ED9F5 /* BTtestTests.swift */; };
+		9FBB1B621A3B47B40020CF2E /* BLEUtilitySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB1B611A3B47B40020CF2E /* BLEUtilitySwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F6377A01A3A1C36005C8E62 /* BTtest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTtest-Bridging-Header.h"; sourceTree = "<group>"; };
+		9F6377AA1A3A26FB005C8E62 /* BLEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEUtility.h; sourceTree = "<group>"; };
+		9F6377AB1A3A26FB005C8E62 /* BLEUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEUtility.m; sourceTree = "<group>"; };
+		9F6377AD1A3A2701005C8E62 /* Sensors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sensors.h; sourceTree = "<group>"; };
+		9F6377AE1A3A2701005C8E62 /* Sensors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sensors.m; sourceTree = "<group>"; };
 		9F684B301A389723000ED9F5 /* BTtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F684B341A389723000ED9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F684B351A389723000ED9F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +44,7 @@
 		9F684B451A389723000ED9F5 /* BTtestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTtestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F684B4A1A389723000ED9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F684B4B1A389723000ED9F5 /* BTtestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTtestTests.swift; sourceTree = "<group>"; };
+		9FBB1B611A3B47B40020CF2E /* BLEUtilitySwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEUtilitySwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F63779F1A3A1BD6005C8E62 /* SensorTag */ = {
+			isa = PBXGroup;
+			children = (
+				9F6377A01A3A1C36005C8E62 /* BTtest-Bridging-Header.h */,
+				9F6377AD1A3A2701005C8E62 /* Sensors.h */,
+				9F6377AE1A3A2701005C8E62 /* Sensors.m */,
+				9F6377AA1A3A26FB005C8E62 /* BLEUtility.h */,
+				9F6377AB1A3A26FB005C8E62 /* BLEUtility.m */,
+			);
+			name = SensorTag;
+			sourceTree = "<group>";
+		};
 		9F684B271A389723000ED9F5 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +98,8 @@
 		9F684B321A389723000ED9F5 /* BTtest */ = {
 			isa = PBXGroup;
 			children = (
+				9FBB1B601A3B46530020CF2E /* SensotTagSwift */,
+				9F63779F1A3A1BD6005C8E62 /* SensorTag */,
 				9F684B351A389723000ED9F5 /* AppDelegate.swift */,
 				9F684B371A389723000ED9F5 /* ViewController.swift */,
 				9F684B391A389723000ED9F5 /* Main.storyboard */,
@@ -110,6 +133,14 @@
 				9F684B4A1A389723000ED9F5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9FBB1B601A3B46530020CF2E /* SensotTagSwift */ = {
+			isa = PBXGroup;
+			children = (
+				9FBB1B611A3B47B40020CF2E /* BLEUtilitySwift.swift */,
+			);
+			name = SensotTagSwift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6377AC1A3A26FB005C8E62 /* BLEUtility.m in Sources */,
+				9F6377AF1A3A2701005C8E62 /* Sensors.m in Sources */,
 				9F684B381A389723000ED9F5 /* ViewController.swift in Sources */,
 				9F684B361A389723000ED9F5 /* AppDelegate.swift in Sources */,
+				9FBB1B621A3B47B40020CF2E /* BLEUtilitySwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,9 +370,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BTtest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BTtest/BTtest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,9 +383,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BTtest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BTtest/BTtest-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +444,7 @@
 				9F684B511A389723000ED9F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F684B521A389723000ED9F5 /* Build configuration list for PBXNativeTarget "BTtestTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +453,7 @@
 				9F684B541A389723000ED9F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
