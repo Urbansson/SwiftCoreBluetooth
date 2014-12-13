@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F6377AC1A3A26FB005C8E62 /* BLEUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6377AB1A3A26FB005C8E62 /* BLEUtility.m */; };
 		9F6377AF1A3A2701005C8E62 /* Sensors.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6377AE1A3A2701005C8E62 /* Sensors.m */; };
 		9F684B361A389723000ED9F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F684B351A389723000ED9F5 /* AppDelegate.swift */; };
 		9F684B381A389723000ED9F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F684B371A389723000ED9F5 /* ViewController.swift */; };
@@ -30,8 +29,6 @@
 
 /* Begin PBXFileReference section */
 		9F6377A01A3A1C36005C8E62 /* BTtest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTtest-Bridging-Header.h"; sourceTree = "<group>"; };
-		9F6377AA1A3A26FB005C8E62 /* BLEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEUtility.h; sourceTree = "<group>"; };
-		9F6377AB1A3A26FB005C8E62 /* BLEUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEUtility.m; sourceTree = "<group>"; };
 		9F6377AD1A3A2701005C8E62 /* Sensors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sensors.h; sourceTree = "<group>"; };
 		9F6377AE1A3A2701005C8E62 /* Sensors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sensors.m; sourceTree = "<group>"; };
 		9F684B301A389723000ED9F5 /* BTtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,8 +68,6 @@
 				9F6377A01A3A1C36005C8E62 /* BTtest-Bridging-Header.h */,
 				9F6377AD1A3A2701005C8E62 /* Sensors.h */,
 				9F6377AE1A3A2701005C8E62 /* Sensors.m */,
-				9F6377AA1A3A26FB005C8E62 /* BLEUtility.h */,
-				9F6377AB1A3A26FB005C8E62 /* BLEUtility.m */,
 			);
 			name = SensorTag;
 			sourceTree = "<group>";
@@ -243,7 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F6377AC1A3A26FB005C8E62 /* BLEUtility.m in Sources */,
 				9F6377AF1A3A2701005C8E62 /* Sensors.m in Sources */,
 				9F684B381A389723000ED9F5 /* ViewController.swift in Sources */,
 				9F684B361A389723000ED9F5 /* AppDelegate.swift in Sources */,
